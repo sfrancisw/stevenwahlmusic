@@ -3,71 +3,82 @@
 <head>
 	<title>Steven Wahl - Music Composer</title>
 	<style>
+		/* Styles for the website */
 		body {
+			background-color: #f7f7f7;
 			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
-			background-color: #F8F8F8;
 		}
 		header {
-			background-color: #222;
-			color: #FFF;
+			background-color: #1abc9c;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
 		h1 {
 			margin: 0;
-			font-size: 40px;
 		}
 		nav {
-			background-color: #444;
-			color: #FFF;
+			background-color: #3498db;
 			padding: 10px;
 			text-align: center;
 		}
 		nav a {
-			color: #FFF;
-			text-decoration: none;
+			color: #fff;
+			font-size: 18px;
 			margin: 0 10px;
+			text-decoration: none;
+			padding: 10px;
+			border-radius: 5px;
+			transition: all 0.2s ease-in-out;
 		}
 		nav a:hover {
-			text-decoration: underline;
+			background-color: #fff;
+			color: #3498db;
 		}
-		main {
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
 			padding: 20px;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			align-content: center;
-			min-height: calc(100vh - 240px);
+			justify-content: space-between;
 		}
 		.project {
-			background-color: #FFF;
-			margin: 20px;
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			margin-bottom: 20px;
 			padding: 20px;
-			box-shadow: 0 2px 4px rgba(0,0,0,.2);
+			width: 30%;
 			text-align: center;
+			transition: all 0.2s ease-in-out;
+		}
+		.project:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 		}
 		.project img {
 			max-width: 100%;
-			height: auto;
+			margin-bottom: 10px;
 		}
-		.project h2 {
-			margin-top: 10px;
+		.project h3 {
+			margin: 0;
 			font-size: 24px;
+			font-weight: normal;
+			color: #1abc9c;
 		}
 		.project p {
-			margin-top: 10px;
+			margin: 10px 0 0;
 			font-size: 16px;
-			line-height: 1.5;
+			color: #666;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Steven Wahl</h1>
-		<p>Music Composer</p>
+		<h1>Steven Wahl - Music Composer</h1>
 	</header>
 	<nav>
 		<a href="#">Home</a>
@@ -75,32 +86,21 @@
 		<a href="#">Projects</a>
 		<a href="#">Contact</a>
 	</nav>
-	<main>
+	<div class="container">
 		<div class="project">
 			<img src="project1.jpg" alt="Project 1">
-			<h2>Project 1</h2>
-			<p>Description of project 1.</p>
+			<h3>Project 1</h3>
+			<p>Description of Project 1.</p>
 		</div>
 		<div class="project">
 			<img src="project2.jpg" alt="Project 2">
-			<h2>Project 2</h2>
-			<p>Description of project 2.</p>
+			<h3>Project 2</h3>
+			<p>Description of Project 2.</p>
 		</div>
 		<div class="project">
 			<img src="project3.jpg" alt="Project 3">
-			<h2>Project 3</h2>
-			<p>Description of project 3.</p>
+			<h3>Project 3</h3>
+			<p>Description of Project 3.</p>
 		</div>
 		<div class="project">
-			<img src="project4.jpg" alt="Project 4">
-			<h2>Project 4</h2>
-			<p>Description of project 4.</p>
-		</div>
-		<div class="project">
-			<img src="project5.jpg" alt="Project 5">
-			<h2>Project 5</h2>
-			<p>Description of project 5.</p>
-		</div>
-		<div class="project">
-			<img src="project6.jpg" alt="Project 6">
-			<h2>Project 
+			<img src="project4.jpg"
