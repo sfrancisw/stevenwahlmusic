@@ -30,7 +30,7 @@
 /* Add this CSS to your styles.css file */
 
 .accordion-item-toggle {
-  position: absolute;
+  position:relative;
   opacity: 0;
   pointer-events: none;
 }
